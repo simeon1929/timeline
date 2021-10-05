@@ -17,10 +17,20 @@ ul, li {
   overflow: hidden;
 }
 
+.purachse__deatils h3 {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
 .purachse__deatils li {
   position: relative;
   padding-left: 74px;
   padding-bottom: 40px;
+}
+
+.purachse__deatils li:last-child:after {
+  display: none;
 }
 
 .purachse__deatils li:after {
@@ -54,7 +64,7 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 19px;
+  font-size: 17px;
   color: #fff;
 }
 
@@ -83,5 +93,44 @@ ul, li {
 .purachse__deatils li .rightcontent {
   left: 145px;
   top: 8px;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.box1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: crimson;
+}
+
+.box2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: khaki;
+}
+
+.box3 {
+  background-color: lawngreen;
+}
+
+.box4 {
+  background-color: lightblue;
+}
+
+.box5 {
+  background-color: lightsalmon;
 }
 /*# sourceMappingURL=style.css.map */
